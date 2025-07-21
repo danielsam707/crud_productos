@@ -25,7 +25,6 @@
                     <td>${{ number_format($producto->precio, 2) }}</td>
                     <td>{{ $producto->stock }}</td>
                     <td>{{ $producto->categoria->nombre }}</td>
-                    <td>{{ $producto->proveedor->nombre }}</td>
                     <td>
                         <a href="{{ route('productos.show', $producto->id) }}" class="btn btn-sm btn-info">Ver</a>
                         <a href="{{ route('productos.edit', $producto->id) }}" class="btn btn-sm btn-warning">Editar</a>
